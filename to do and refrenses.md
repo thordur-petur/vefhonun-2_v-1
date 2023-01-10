@@ -4,5 +4,6 @@
 * 3.texta sem talar um fyrirtækið
 * 4.inskráning og setja up acount
 * 5.spjall forit
+* 6.pop up
 # refrenses
 https://www.icelandair.com/
