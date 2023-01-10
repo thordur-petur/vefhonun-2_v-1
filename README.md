@@ -12,7 +12,7 @@ https://www.icelandair.com/
 ### proto type
 https://www.figma.com/file/EI4tkPtxKyeeTIkftVEXXS/Untitled?node-id=0%3A3&t=zsRi7CjXHQarPwoO-0
 ### litir
-main color 47F4FF
-sing in 2F2183
-menu FBB13C
-second color D81159
+* main color 47F4FF
+* sing in 2F2183
+* menu FBB13C
+* second color D81159
