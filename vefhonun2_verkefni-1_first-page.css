@@ -1,0 +1,16 @@
+.boton-section{
+    border: dashed black;
+    height: 450px;
+    margin: auto;
+    padding: 10px;
+}
+.boton-boton{
+    border: dashed black;
+    margin: auto;
+    margin-top: 300px;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(251, 177, 60);
+    color: rgb(47, 33, 131);
+}

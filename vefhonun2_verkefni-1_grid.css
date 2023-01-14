@@ -1,32 +1,32 @@
+.col-border div{
+    border: dashed #943333;
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+}
 .col-1{
     display: grid;
     grid-template-columns: 1fr;
-    border: solid black;
-    text-align: center;
+
 }
 .col-2{
     display: grid;
     grid-template-columns: 1fr;
-    border: solid black;
-    text-align: center;
+
 }
 .col-3{
     display: grid;
     grid-template-columns: 1fr;
-    border: solid black;
-    text-align: center;
+
 }
 .col-4{
     display: grid;
     grid-template-columns: 1fr;
-    border: solid black;
-    text-align: center;
+
 }
 .col-5{
     display: grid;
     grid-template-columns: 1fr;
-    border: solid black;
-    text-align: center;
 }
 @media screen and (mid-width: 30em) {
     
