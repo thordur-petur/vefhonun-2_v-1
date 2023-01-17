@@ -5,12 +5,14 @@
     padding: 10px;
 }
 .boton-boton{
-    border: dashed black;
     margin: auto;
-    margin-top: 300px;
-    height: auto;
+    margin-top: 250px;
+    height: 75px;
     width: 50%;
     text-align: center;
     background-color: rgb(251, 177, 60);
     color: rgb(47, 33, 131);
+}
+.boton-boton:hover{
+    background-color: rgb(230, 177, 60);
 }

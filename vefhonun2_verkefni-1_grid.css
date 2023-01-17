@@ -1,8 +1,5 @@
-.col-border div{
-    border: dashed #943333;
+.col-border{
     text-align: center;
-    padding: 0.5em 0;
-    margin: 0.5em 0;
 }
 .col-1{
     display: grid;
