@@ -6,12 +6,12 @@
 
 ### Site map
 
-* 1.head með drop menu
-* 2.val tálk svo er hægt að bóka flug og hafa smá texta sem getur útskírt staðin
-* 3.texta sem talar um fyrirtækið
-* 4.inskráning og setja up acount
-* 5.spjall forit
-* 6.pop up
+1. Forsíða (head með drop menu ?)
+  * Ferðaslýsingar, svo er hægt að bóka flug
+  * pop up -  texta sem getur útskírt staðin ?
+1. bókunarsíða -- innskráning og nýskráning - acount
+1. spjall forrit
+1. um fyrirtækið
 
 ---
 
