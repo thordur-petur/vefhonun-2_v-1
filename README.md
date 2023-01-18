@@ -7,8 +7,8 @@
 ### Site map
 
 1. Forsíða (head með drop menu ?)
-  * Ferðaslýsingar, svo er hægt að bóka flug
-  * pop up -  texta sem getur útskírt staðin ?
+   * Ferðaslýsingar, svo er hægt að bóka flug
+   * pop up -  texta sem getur útskírt staðin ?
 1. bókunarsíða -- innskráning og nýskráning - acount
 1. spjall forrit
 1. um fyrirtækið
