@@ -32,3 +32,9 @@ header{
 .sel-button:hover{
     background-color: rgba(230, 176, 60, 0.6);
 }
+footer{
+    padding: 1em;
+}
+.space{
+    padding: 100px 0 ;
+}

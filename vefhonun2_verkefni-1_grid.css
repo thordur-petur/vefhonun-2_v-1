@@ -6,12 +6,12 @@
     grid-template-columns: 1fr;
 
 }
-.col-2{
+.col-2-text{
     display: grid;
     grid-template-columns: 1fr;
 
 }
-.col-3{
+.col-3-footer{
     display: grid;
     grid-template-columns: 1fr;
 
@@ -25,6 +25,24 @@
     display: grid;
     grid-template-columns: 1fr;
 }
-@media screen and (mid-width: 30em) {
+@media screen and (min-width: 30em) {
+    
+}
+@media screen and (min-width: 48em) {
+    .col-2-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .col-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .col-3-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}
+@media screen and (min-width: 80em) {
     
 }
