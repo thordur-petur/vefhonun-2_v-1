@@ -9,7 +9,7 @@
 .col-2-text{
     display: grid;
     grid-template-columns: 1fr;
-
+    margin-top: 10em;
 }
 .col-3-footer{
     display: grid;
@@ -44,5 +44,9 @@
     }
 }
 @media screen and (min-width: 80em) {
-    
+    .col-2-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10em;
+    }
 }
