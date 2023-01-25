@@ -3,9 +3,10 @@
     margin: auto;
     padding: 10px;
     margin-bottom: 100px;
-    background-image: url("sun air plane.jpg") ;
+    background-image: url("/website/images/sun\ air\ plane.jpg") ;
     background-repeat: no-repeat, repeat;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: 100em 100%;
 }
 .boton-boton{
     margin: auto;
