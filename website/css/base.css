@@ -35,6 +35,8 @@ header{
 }
 footer{
     padding: 1em;
+    text-align: left;
+    background-color: rgb(71, 244, 255);
 }
 .space{
     padding: 100px 0 ;

@@ -14,13 +14,11 @@
 .col-3-footer{
     display: grid;
     grid-template-columns: 1fr;
-
-}
-.col-4{
-    display: grid;
-    grid-template-columns: 1fr;
-
-}
+    }
+    .col-4-table{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 .col-5{
     display: grid;
     grid-template-columns: 1fr;
@@ -40,7 +38,6 @@
     .col-3-footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
-    
     }
 }
 @media screen and (min-width: 80em) {
@@ -48,5 +45,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 10em;
+    }
+    .col-4-table{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
