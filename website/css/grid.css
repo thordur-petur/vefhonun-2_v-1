@@ -39,15 +39,15 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .col-4-table{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media screen and (min-width: 80em) {
     .col-2-text{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 10em;
-    }
-    .col-4-table{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 }
