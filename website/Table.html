@@ -30,49 +30,91 @@
         <tr>
           <th scope="Land">Land</th>
           <th class="th-time">Tímasetning</th>
+          <th> Panda</th>
           <th></th>
           <th></th>
         </tr>
         <tr>
         <td>Germany</td>
-        <td>15:15</td>
-        <td>15:15</td>
-        <td>15:15</td>
+        <td>
+          <p>15:15</p>
+          <p>17:30</p>
+          <p>19:45</p>
+        </td>
+        <td data-label="CHECK IN">
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+        </td>
         </tr>
         <tr>
-        
         <td>Mexico</td>
-        <td>15:15</td>
-        <td>15:15</td>
-        <td>15:15</td>
+        <td>
+          <p>15:15</p>
+          <p>17:30</p>
+          <p>19:45</p>
+        </td>
+        <td data-label="CHECK IN">
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+        </td>
         </tr>
         <tr>
         
         <td>Austria</td>
-        <td>15:15</td>
-        <td>15:15</td>
-        <td>15:15</td>
+        <td>
+          <p>15:15</p>
+          <p>17:30</p>
+          <p>19:45</p>
+        </td>
+        <td data-label="CHECK IN">
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+        </td>
         </tr>
         <tr>
         
         <td>UK</td>
-        <td>15:15</td>
-        <td>15:15</td>
-        <td>15:15</td>
+        <td>
+          <p>15:15</p>
+          <p>17:30</p>
+          <p>19:45</p>
+        </td>
+        <td data-label="CHECK IN">
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+        </td>
         </tr>
         <tr>
         
         <td>Canada</td>
-        <td>15:15</td>
-        <td>15:15</td>
-        <td>15:15</td>
+        <td>
+          <p>15:15</p>
+          <p>17:30</p>
+          <p>19:45</p>
+        </td>
+        <td data-label="CHECK IN">
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+          <p><a class="button" href="#popup1">register</a></p>
+        </td>
         </tr>
       <tr>
         
         <td>Italy</td>
-        <td>15:15</td>
-        <td>15:15</td>
-        <td>15:15</td>
+        <td>
+          <p>15:15</p>
+          <p>17:30</p>
+          <p>19:45</p>
+        </td>
+        <td data-label="CHECK IN">
+          <p><a class="button"href="#Italy" >register</a></p>
+          <p><a class="button" >register</a></p>
+          <p><a class="button" >register</a></p>
+        </td>
         </tr>
       </table>  
       <form action="/action_page.php">
@@ -100,6 +142,34 @@
           |
           <label for="annað">annað</label>
           <input type="radio" name="gender" id="annað" value="annað">
+          <br>
+          <section class="Panda-col">
+            <p> 
+              <br>
+              Ferðir í boði: 
+              <select name="ferdaval" required>
+                <option value="1" id="Germany">Germany</option>
+                <option value="2" id="Mexico">Mexico</option>
+                <option value="3" id="Austria">Austria</option>
+                <option value="4" id="UK">UK</option>
+                <option value="5" id="Canada">Canada</option>
+                <option value="6" id="Italy">Italy</option>
+              </select>
+            </p>
+            <p>
+              Fjöldi ferðamanna: <input type="number" required>
+            </p>
+            <p>
+              Dagsetning ferðar: 
+                <input type="date" required>
+            </p>
+            <p>Klukan <input type="time" list="time" required>
+              <datalist id="time">
+                <option value="15:15">
+                <option value="17:30">
+                <option value="19:45">
+                </datalist></p>
+          </section>
           <hr>      
           <button type="submit" class="registerbtn">Panta</button>
           
