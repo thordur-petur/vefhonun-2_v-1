@@ -58,8 +58,7 @@ table {
   
   /* Set a style for the submit button */
   .registerbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: rgb(71, 244, 255);
     padding: 16px 20px;
     margin: 8px 0;
     border: none;
