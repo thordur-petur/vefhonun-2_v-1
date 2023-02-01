@@ -42,9 +42,9 @@
           <p>19:45</p>
         </td>
         <td data-label="CHECK IN">
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
+          <p><button class="button"  onclick="button_change15();button_change1()" >register</button></p>
+          <p><button class="button"  onclick="button_change30();button_change1()" >register</button></p>
+          <p><button class="button"  onclick="button_change45();button_change1()" >register</button></p>
         </td>
         </tr>
         <tr>
@@ -55,9 +55,9 @@
           <p>19:45</p>
         </td>
         <td data-label="CHECK IN">
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
+          <p><button class="button"  onclick="button_change15();button_change2()" >register</button></p>
+          <p><button class="button"  onclick="button_change30();button_change2()" >register</button></p>
+          <p><button class="button"  onclick="button_change45();button_change2()" >register</button></p>
         </td>
         </tr>
         <tr>
@@ -69,9 +69,9 @@
           <p>19:45</p>
         </td>
         <td data-label="CHECK IN">
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
+          <p><button class="button"  onclick="button_change15();button_change3()" >register</button></p>
+          <p><button class="button"  onclick="button_change30();button_change3()" >register</button></p>
+          <p><button class="button"  onclick="button_change45();button_change3()" >register</button></p>
         </td>
         </tr>
         <tr>
@@ -83,9 +83,9 @@
           <p>19:45</p>
         </td>
         <td data-label="CHECK IN">
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
+          <p><button class="button"  onclick="button_change15();button_change4()" >register</button></p>
+          <p><button class="button"  onclick="button_change30();button_change4()" >register</button></p>
+          <p><button class="button"  onclick="button_change45();button_change4()" >register</button></p>
         </td>
         </tr>
         <tr>
@@ -97,9 +97,9 @@
           <p>19:45</p>
         </td>
         <td data-label="CHECK IN">
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
-          <p><a class="button" href="#popup1">register</a></p>
+          <p><button class="button"  onclick="button_change15();button_change5()" >register</button></p>
+          <p><button class="button"  onclick="button_change30();button_change5()" >register</button></p>
+          <p><button class="button"  onclick="button_change45();button_change5()" >register</button></p>
         </td>
         </tr>
       <tr>
@@ -111,9 +111,9 @@
           <p>19:45</p>
         </td>
         <td data-label="CHECK IN">
-          <p><a class="button"href="#Italy" >register</a></p>
-          <p><a class="button" >register</a></p>
-          <p><a class="button" >register</a></p>
+          <p><button class="button"  onclick="button_change15();button_change6()" >register</button></p>
+          <p><button class="button"  onclick="button_change30();button_change6()" >register</button></p>
+          <p><button class="button"  onclick="button_change45();button_change6()" >register</button></p>
         </td>
         </tr>
       </table>  
@@ -147,13 +147,13 @@
             <p> 
               
               Ferðir í boði: 
-              <select name="ferdaval" required>
-                <option value="1" id="Germany">Germany</option>
-                <option value="2" id="Mexico">Mexico</option>
-                <option value="3" id="Austria">Austria</option>
-                <option value="4" id="UK">UK</option>
-                <option value="5" id="Canada">Canada</option>
-                <option value="6" id="Italy">Italy</option>
+              <select name="ferdaval" id="cunt" required>
+                <option value="1" >Germany</option>
+                <option value="2" >Mexico</option>
+                <option value="3" >Austria</option>
+                <option value="4" >UK</option>
+                <option value="5" >Canada</option>
+                <option value="6" >Italy</option>
               </select>
             </p>
             <p>
@@ -163,7 +163,7 @@
               Dagsetning ferðar: 
                 <input type="date" required>
             </p>
-            <p>Klukan <input type="time" list="time" required>
+            <p>Klukan <input type="time" list="time" id="time" required>
               <datalist id="time">
                 <option value="15:15">
                 <option value="17:30">
@@ -177,6 +177,43 @@
       </form>
     </section>
     <section class="space"></section>
+    <script>
+      function button_change6(){
+      const select = document.getElementById('cunt')
+      select.value = '6'}
+      function button_change5(){
+      
+      const select = document.getElementById('cunt')
+      select.value = '5'}
+      function button_change4(){
+      
+      const select = document.getElementById('cunt')
+      select.value = '4'}
+      function button_change3(){
+      
+      const select = document.getElementById('cunt')
+      select.value = '3'}
+      function button_change2(){
+      
+      const select = document.getElementById('cunt')
+      select.value = '2'}
+      function button_change1(){
+      
+      const select = document.getElementById('cunt')
+      select.value = '1'}
+
+      function button_change15(){
+      const select = document.getElementById('time')
+      select.value = '15:15'}
+
+      function button_change30(){
+      const select = document.getElementById('time')
+      select.value = '17:30'}
+
+      function button_change45(){
+      const select = document.getElementById('time')
+      select.value = '19:45'}
+    </script>
     </body>  
     <footer class="col-3-footer">
         <nav>
