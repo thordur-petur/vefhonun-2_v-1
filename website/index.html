@@ -15,16 +15,20 @@
 </head>
 <header>
   <h1>fyrirtæki nafn</h1>
+  
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  
+  <script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script>
 </header>
   <body>
-    <div class="main-section">
-      <section class="selection">
-        <div class="col-1">
-          <button class="sel-button">skoða</button>
-          <button class="sel-button">fina</button>
-          <button class="sel-button">leita</button>
-         </div>
-      </section>
       <section class="boton-section">
         
         <section> <button class="boton-boton">panda miða</button></section>
