@@ -14,19 +14,35 @@
   <link href="css/1_first-page.css" rel="stylesheet">
 </head>
 <header>
-  <h1>fyrirtæki nafn</h1>
-  
-  <div class="container" onclick="myFunction(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
-  
-  <script>
-  function myFunction(x) {
-    x.classList.toggle("change");
-  }
-  </script>
+<div class="headwrapper">
+  <div class="headmenu"> 
+      <div class="logo">       
+          <img> 
+          <a href="index.html">Fljúga Flug</a>
+      </div>
+      <div class="dropedownicon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="sel-web" id="poop">
+        b
+        <a href="#">Link</Link></a>
+        <a href="#">Links</a>
+        <a href="#">Lings</a>
+      </div>
+      
+      <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+        document.getElementById("poop").style.bottom = "2em";
+      }
+      </script>
+
+          </div>
+      </nav>
+  </div> 
+</div>
 </header>
   <body>
       <section class="boton-section">
