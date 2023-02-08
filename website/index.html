@@ -20,23 +20,40 @@
           <img> 
           <a href="index.html">Fljúga Flug</a>
       </div>
-      <div class="dropedownicon" onclick="myFunction(this)">
+      <div class="dropedownicon" id="Xmark" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
       <div class="sel-web" id="poop">
-        b
-        <a href="#">Link</Link></a>
+        <a href="#">Link</a>
+        <br>
+        <br>
         <a href="#">Links</a>
+        <br>
+        <br>
         <a href="#">Lings</a>
       </div>
       
       <script>
-      function myFunction(x) {
+            
+var toggleMe = document.getElementsByClassName("sel-web")[0];
+toggleMe.toggleStatus = "on";
+
+function myFunction(x) {
         x.classList.toggle("change");
-        document.getElementById("poop").style.bottom = "2em";
-      }
+  
+  switch(toggleMe.toggleStatus){
+    case "on":
+      toggleMe.toggleStatus="off";
+      toggleMe.style.right = "0px";
+      break;
+    case "off":
+      toggleMe.toggleStatus="on";
+      toggleMe.style.right = "-15em";
+      break;
+  }
+}
       </script>
 
           </div>
