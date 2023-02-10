@@ -25,13 +25,9 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <div class="sel-web" id="poop">
-        <a href="#">Link</a>
-        <br>
-        <br>
+      <div class="sel-web col-5" id="poop">
+        <a href="Table.html">Flug</a>
         <a href="#">Links</a>
-        <br>
-        <br>
         <a href="#">Lings</a>
       </div>
       
@@ -41,6 +37,7 @@ var toggleMe = document.getElementsByClassName("sel-web")[0];
 toggleMe.toggleStatus = "on";
 
 function myFunction(x) {
+  if (window.innerWidth < 750) {
         x.classList.toggle("change");
   
   switch(toggleMe.toggleStatus){
@@ -52,6 +49,7 @@ function myFunction(x) {
       toggleMe.toggleStatus="on";
       toggleMe.style.right = "-15em";
       break;
+  }
   }
 }
       </script>

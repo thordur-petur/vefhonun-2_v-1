@@ -12,7 +12,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 3.5em;
+    height: 5.5em;
     width: 102%;
     background-color: rgb(71, 244, 255);
     border: 0;
@@ -59,7 +59,7 @@ html{
 }
 body{
     margin: 0;
-    padding: 0;
+    padding-top: 10em;
     background-color: white;
     text-align: center;
 }
@@ -93,4 +93,13 @@ footer{
 }
 .space{
     padding: 100px 0 ;
+}
+@media screen and (min-width: 48em) {
+  .sel-web{
+    right: 0px;
+    top: 0px;
+  }
+  .dropedownicon{
+    right: -15em;
+  }
 }

@@ -28,3 +28,9 @@
     width: 500px; 
     height: 333px;
 }
+@media screen and (min-width: 84em) {
+    .boton-section{
+        width: 70%;
+    }
+}
+

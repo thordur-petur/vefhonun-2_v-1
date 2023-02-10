@@ -14,18 +14,52 @@
   <link href="css/table-style.css" rel="stylesheet">
 </head>
 <header>
-  <h1>fyrirtæki nafn</h1>
-</header>
-  <body>
-    <div class="main-section">
-      <section class="selection">
-        <div class="col-1">
-          <button class="sel-button">skoða</button>
-          <button class="sel-button">fina</button>
-          <button class="sel-button">leita</button>
-         </div>
-      </section>
-      <section class="col-4-table">
+  <div class="headwrapper">
+    <div class="headmenu"> 
+        <div class="logo">       
+            <img> 
+            <a href="index.html">Fljúga Flug</a>
+        </div>
+        <div class="dropedownicon" id="Xmark" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="sel-web col-5" id="poop">
+          <a href="Table.html">Flug</a>
+          <a href="#">Links</a>
+          <a href="#">Lings</a>
+        </div>
+        
+        <script>
+              
+  var toggleMe = document.getElementsByClassName("sel-web")[0];
+  toggleMe.toggleStatus = "on";
+  
+  function myFunction(x) {
+    if (window.innerWidth < 750) {
+          x.classList.toggle("change");
+    
+    switch(toggleMe.toggleStatus){
+      case "on":
+        toggleMe.toggleStatus="off";
+        toggleMe.style.right = "0px";
+        break;
+      case "off":
+        toggleMe.toggleStatus="on";
+        toggleMe.style.right = "-15em";
+        break;
+    }
+    }
+  }
+        </script>
+  
+            </div>
+        </nav>
+    </div> 
+  </div>
+  </header>
+    </script>      <section class="col-4-table">
       <table>
         <tr>
           <th scope="Land">Land</th>
