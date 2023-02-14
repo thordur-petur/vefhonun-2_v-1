@@ -12,6 +12,8 @@
   <link href="css/base.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/1_first-page.css" rel="stylesheet">
+  <link href="css/slideshow.css" rel="stylesheet">
+
 </head>
 <header>
 <div class="headwrapper">
@@ -60,10 +62,51 @@ function myFunction(x) {
 </div>
 </header>
   <body>
-      <section class="boton-section">
-        
-        <section> <button class="boton-boton">panda miða</button></section>
-      </section>
+    <div id="slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide4">
+      <div id="slides">
+         <div id="overflow">
+            <div class="inner">
+               <div class="slide slide_1">
+                  <div class="slide-content">
+                     <img src="images/sun air plane.jpg" class="img-slide">
+                  </div>
+               </div>
+               <div class="slide slide_2">
+                  <div class="slide-content">
+                     <img src="images/lots of people.jpg" class="img-slide">
+                  </div>
+               </div>
+               <div class="slide slide_3">
+                  <div class="slide-content">
+                     <img src="images/sets.jpg" class="img-slide">
+                  </div>
+               </div>
+               <div class="slide slide_4">
+                  <div class="slide-content">
+                     <img src="images/AIRPLANE!.jfif" class="img-slide">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section> <button class="boton-boton">panda miða</button></section>
+      </div>
+      <div id="controls">
+         <label for="slide1"></label>
+         <label for="slide2"></label>
+         <label for="slide3"></label>
+         <label for="slide4"></label>
+      </div>
+      <div id="bullets">
+         <label for="slide1"></label>
+         <label for="slide2"></label>
+         <label for="slide3"></label>
+         <label for="slide4"></label>
+      </div>
+    </div>
       <section class="col-2-text">
         <div>
           <img class="img-text" src="/website/images/air plane.jpg">
@@ -100,6 +143,7 @@ function myFunction(x) {
       <div class="space"></div>
   </div>
 </body>
+
 <footer class="col-3-footer">
   <nav>
     <dl><!--Description list, nafn tölvupóstur og áfangi-->
