@@ -1,0 +1,152 @@
+/* Landing page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+}
+.logo-2{
+  padding-top: 2em;
+}
+.phone {
+  display: block;
+  position: relative;
+  padding: 0 1em;
+  width: 88%;
+}
+/* value
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.value {
+  text-align: center;
+}
+.value h1 {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 2.5em;
+  margin: 0 auto;
+  padding: .4em;
+}
+
+/* bgimage
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.bgimage {
+  width: 100%;
+  padding-right: 1em;
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 1em;
+}
+dl {
+  margin: 0;
+}
+.footerbg {
+  background-color: rgb(149, 233, 215);
+  padding: 2em 0 1em 0;
+}
+/*
+  ========================================
+  Form
+  ========================================
+*/
+.register {
+  border: 1px solid rgb(199, 199, 199);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.register input[type=text], 
+.register input[type=email], 
+.register input[type=tel], 
+textarea {
+  display: block;
+  border: 1px solid grey;
+  border-radius: .2em;
+  width: 100%;
+  padding: .5em;
+  margin: .3em 0;
+  box-shadow:inset 2px 3px 5px rgb(167, 166, 166);
+}
+.register input[type=text]:active {
+  border: 1px solid green;
+}
+
+/* Bigger than 35 */
+@media (min-width: 35em) {
+  .landing {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  .phone {
+    width: 100%;
+    z-index: 3;
+    transform: rotate(6deg);
+    padding-top: 2.5em;
+  }
+}
+/* Bigger than 48 */
+@media (min-width: 48em) {
+  .bgimage {
+    padding: 3em 0;
+  }
+  .landing-bg {
+    position: relative;
+    top: -0.5em;
+  }
+}
+
+/* Bigger than 960 */
+@media (min-width: 60em) {
+  .landing {
+    grid-template-columns: 3fr 1fr;
+  }
+  .landing-bg {
+    position: relative;
+    top: -4em;
+  }
+  .mtop3em {
+    margin-top:3em;
+  }
+  .schedule table{
+    margin: 0 auto;
+  }
+}
+
+/* ****** töflumix ath! hér er notað MAX-width ********/
+
+@media screen and (max-width: 37.5em) {
+
+  .schedule {
+    padding: 0 .5em ;
+  }
+  .schedule thead,
+  .schedule tbody th {
+    display:none;
+  }
+  
+  .schedule tr {
+    /*border-bottom: 1px solid #ddd;*/
+    display: block;
+    margin: .4em 0;
+  }
+  
+  .schedule td {
+    display: block;
+    text-align: right;
+    padding: 2em 1.4em .5em .5em;
+    width:96%;
+  }
+  
+  .schedule td::before {
+    content: attr(data-label);
+    float: left;
+  }
+  .schedule h4 {
+    margin-top: -.1em;
+    font-size: 1.1em;
+    padding-bottom: .2em;
+  }
+}

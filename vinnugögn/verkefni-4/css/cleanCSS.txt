@@ -1,0 +1,6 @@
+/* CSS Compressor viðbót í VSC/verkefni-n/.vscode/settings.json - endurræsa síðan forritið*/
+{
+    "CleanCSS.options": { 
+	"format": "beautify"
+	}
+}

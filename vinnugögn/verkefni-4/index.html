@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="GJG">
+    <title>Töflur og form - Verkefni 3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/1-base.css">
+    <link rel="stylesheet" href="css/2-grid.css">
+    <!--link rel="stylesheet" href="css/3-iconfont.css"-->
+    <link rel="stylesheet" href="css/4-topmenu.css">
+    <link rel="stylesheet" href="css/5-custom.css">
+    <link rel="stylesheet" href="css/6-popup.css">
+    <link rel="stylesheet" href="css/7-accordion.css">
+    <!--link rel="stylesheet" href="css/styles.css"-->
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+    <script>
+      function changeState(check1) 
+      {
+          var sel = document.getElementById("select1")
+          sel.disabled = check1.checked ? false : true;
+          if (!select1.disabled)
+          {
+              select1.focus();
+          }
+      }
+    </script>
+</head>
+<body id="top">
+  <section class="topnav">
+    <p>GROOVY THING GOIN'</p>
+    <nav>
+      <input type="checkbox" id="toggle" class="menuInput">
+      <label for="toggle" class="menuLabel"><span class="icon-home"></span></label>
+      <div class="topmenu">
+        <a href="#where">Where</a>
+        <a href="#why">Why</a>
+        <a href="#program">Program</a>
+        <a href="#buy">Buy Tickets</a>
+        <a href="#about">About Us</a>
+      </div>
+    </nav>
+  </section>
+  <header class="container">
+    <section class="landing">
+      <div>
+        <img src="images/rwd-title.svg" width="80" class="logo-2">
+        <h1>Flóknar stílsetningar</h1>
+      </div>
+      <div>
+        <img class="phone" src="images/mobile.png">
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="container col-2" id="where">
+      <section>
+        <article>
+          <h2>Harmonikkulisti</h2>
+          <p>Lorem, ipsum dolor <a href="https://code-boxx.com/simple-responsive-accordion-pure-css/">simple responsive accordion in pure css.</a> Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>
+        </article>
+        <!-- FIRST TAB -->
+        <div class="tab">
+          <input id="tab-1r" type="radio" name="tabr">
+          <label for="tab-1r">Tab 1, Lorem ipsum dolor</label>
+          <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, odio ex? Quasi libero eos earum suscipit perferendis quam omnis quis, nihil natus laborum, quia rerum possimus fugiat eligendi fugit tenetur?</p></div>
+        </div>
+
+        <!-- SECOND TAB -->
+        <div class="tab">
+          <input id="tab-2r" type="radio" name="tabr">
+          <label for="tab-2r">Tab 2, Adipisci, ut iste!</label>
+          <div class="content"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem quia voluptates rerum. Corporis sed ipsam recusandae, minima dolores, aperiam accusantium repudiandae expedita voluptatem quo, maxime ab provident. Adipisci, ut iste! </p></div>
+        </div>
+
+        <!-- THIRD TAB -->
+        <div class="tab">
+          <input id="tab-3r" type="radio" name="tabr">
+          <label for="tab-3r">Tab 3, porro incidunt tempora</label>
+          <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa velit omnis, explicabo eum quibusdam commodi dolore a, totam aperiam, tempore quisquam nesciunt enim iusto impedit consectetur porro incidunt tempora.</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>Táknmyndir í tenglum</h2>
+        <p class="downlbutts"><a href="#.pdf">PDF Document download</a>. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, officiis nisi. Corporis cupiditate ipsa illo eligendi id quisquam eveniet porro illum facilis, provident perferendis obcaecati eos amet dolorem iste odit.</p>
+        <h4>Efni til að hlaða inn á tölvuna þína</h4>
+        <ul class="downlbutts">
+          <li><a href="#.doc">Word Document download</a></li>
+          <li><a href="#.jpg">Image File download</a></li>
+          <li><a href="#.mp3">Audio File download</a></li>
+          <li><a href="#.mp4">Video File download</a></li>
+        </ul> 
+      </section>
+    </section>
+    <!-- Dagskrá í töflu -->
+    <section class="container" id="program">
+      <h3>Dagskrá í töflu sem aðlagast öllum skjástærðum</h3>
+      <p>Þegar smellt er á hnappinn "Register" þá sprettur upp gluggi og grár bakgrunnur skyggir á innihald síðunnar</p>
+      <div class="schedule" id="program">
+        <table>
+          <caption>Schedule of something</caption>
+          <thead>
+              <tr> 
+                  <th scope="col">WHO</th>
+                  <th scope="col">WHERE</th>
+                  <th scope="col">WHEN</th>
+                  <th scope="col">CHECK IN</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td scope="row" data-label="WHO">Obcaecati deleniti</td>
+                  <td data-label="WHERE">Lorem ipsum dolor, adipisicing elit</td>
+                  <td data-label="WHEN">10:30 - 12:00</td>
+                  <td data-label="CHECK IN"><a class="button" href="#popup1">register</a></td>
+              </tr>
+              <tr>
+                  <td scope="row" data-label="WHO">Sit amet consectetur</td>
+                  <td data-label="WHERE">Dolor saepe odio</td>
+                  <td data-label="WHEN">13:30 - 17:00</td>
+                  <td data-label="CHECK IN"><a class="button" href="#popup1">register</a></td>
+              </tr>
+              <tr>
+                  <td scope="row" data-label="WHO">Fuga corrupti commodi optio</td>
+                  <td data-label="WHERE">Non eius odit, animi alias adipisci sed hic nisi.</td>
+                  <td data-label="WHEN">22:30 - 00:00</td>
+                  <td data-label="CHECK IN"><a class="button" href="#popup1">register</a></td>
+              </tr>
+              <tr>
+                <td scope="row" data-label="WHO">Obcaecati deleniti</td>
+                <td data-label="WHERE">Lorem ipsum dolor, adipisicing elit</td>
+                <td data-label="WHEN">10:30 - 12:00</td>
+                <td data-label="CHECK IN"><a class="button" href="#popup1">register</a></td>
+            </tr>
+            <tr>
+                <td scope="row" data-label="WHO">Sit amet consectetur</td>
+                <td data-label="WHERE">Dolor saepe odio</td>
+                <td data-label="WHEN">13:30 - 17:00</td>
+                <td data-label="CHECK IN"><a class="button" href="#popup1">register</a></td>
+            </tr>
+            <tr>
+                <td scope="row" data-label="WHO">Fuga corrupti commodi optio</td>
+                <td data-label="WHERE">Non eius odit, animi alias adipisci sed hic nisi.</td>
+                <td data-label="WHEN">22:30 - 00:00</td>
+                <td data-label="CHECK IN"><a class="button" href="#popup1">register</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--popup 1-->
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <div class="register">
+          <h3>Event of some Sort</h3>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <form action="#" method="GET">
+              <fieldset><!--nota klasa til að geta haft aðra forma með öðru útliti - sjá css-->
+                  <label><!--autofocus-->
+                      <input type="text" 
+                              name="nafn" 
+                              placeholder="Full name" 
+                              required 
+                              title="Vinsamlegast skráið nafn"> <!--ATH! input hefur ekki lokunartag -->
+                  </label>
+                  <label>
+                      <input  type="text" 
+                              name="sími" 
+                              placeholder="Telephone (7 digits)"
+                              title="Vinsamlegast skráið aðeins 7 tölustafi"
+                              required
+                              pattern="\d{3}(?:[\-\s]?)\d{4}">
+                  </label>    <!-- http://html5pattern.com/Phones "\d{3}(?:[\-\s]?)\d{4}" -->
+                  <label>
+                      <input  type="email" 
+                              name="tölvupóstur" 
+                              placeholder="Email address" 
+                              required>
+                    </label>
+                  <label>
+                      <input type="submit" name="submit" value="Send">
+              </fieldset>
+          </form>            
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container" id="about"><h3>Um okkur</h3></div>
+  <section class="container col-2">
+    <div>
+      <img src="images/skrifstofan.jpg" title="Starsfólk skrifstofunnar">
+      <p><strong>Skrifstofan ehf</strong> er fjölskyldurekið fyrirtæki með aðsetur á Hólmavík.</p>
+      <p>Hugmyndir eru einskis nýtar ef maður framkvæmir þær ekki. Að sama skapi geta góðar hugmyndir orðið að litlu ef framkvæmd þeirra er ekki eins og best er á kosið.
+        <ul>
+          <li>Góð þekking á atvinnugreininni.</li>
+          <li>Góð þekking á þörfum viðskiptavinanna.</li>
+          <li>Aðgangur að þeim auðlindum sem þarf til að reka fyrirtækið.</li>
+          <li>Markmið skrifstofunnar er að nýta sér þau tækifæri sem eru í boði hverju sinni.</li>
+        </ul>
+      <p><em>Bestu kveðjur</em></p>	
+      <H4>Skrifstofan ehf</H4>
+    </div>
+    <div id="buy">
+        <form action="postur-ok.html" method="GET"><!--"POST" er notað þegar upplýsingar eru sendar úr formi-->
+            <fieldset class="register"><!--nota klasa til að geta haft aðra forma með öðru útliti - sjá css-->
+              <legend>Ferðapöntun</legend>
+              <p><!--autofocus-->
+                  Nafn:  
+                  <input type="text" 
+                          name="nafn" 
+                          placeholder="Full name" 
+                          required 
+                          title="Vinsamlegast skráið nafn"> <!--ATH! input hefur ekki lokunartag -->
+              </p>
+                <p>Kyn: 
+                  <input type="radio" name="kyn" value="Hann" id="Hann">
+                  <label for="Hann">Hann</label> |
+                  <input type="radio" name="kyn" value="Hún" id="Hún"> 
+                  <label for="Hún">Hún</label> |
+                  <input type="radio" name="kyn" value="Hán" id="Hán"> 
+                  <label for="Hán">Hán</label> 
+                </p>
+                <p>
+                    Símanúmer: 
+                    <input  type="text" 
+                            name="sími" 
+                            placeholder="Telephone (7 digits)"
+                            title="Vinsamlegast skráið aðeins 7 tölustafi"
+                            required
+                            pattern="\d{3}(?:[\-\s]?)\d{4}">
+                </p>    <!-- http://html5pattern.com/Phones "\d{3}(?:[\-\s]?)\d{4}" -->
+                <p>
+                  Tölvupóstur: 
+                  <input  type="email" 
+                          name="tölvupóstur" 
+                          placeholder="Email address" 
+                          required>
+                </p>
+                <section class="col-3">
+                  <p> 
+                    Ferðir í boði: 
+                    <select name="ferdaval">
+                      <option value="1">Valmöguleiki 1</option>
+                      <option value="2">Valmöguleiki 2</option>
+                      <option value="3">Valmöguleiki 3</option>
+                      <option value="4">Valmöguleiki 4</option>
+                      <option value="5">Valmöguleiki 5</option>
+                    </select>
+                  </p>
+                  <p>
+                    Fjöldi ferðamanna: <input type="number">
+                  </p>
+                  <p>
+                    Dagsetning ferðar: 
+                      <input type="date">
+                  </p>
+                </section>
+                <p>
+                    <!--https://www.w3schools.com/tags/att_textarea_rows.asp-->
+                    <textarea rows="4" name="comment" placeholder="Ábending - Comment"></textarea>
+                </p>
+                <p>
+                  <input type="checkbox" name="postlist" value="OK" id="plist"> 
+                  <label for="plist">Skráið mig á póstlistann</label> |
+                  <input type="checkbox" name="subscription" value="OK" id="sub"> 
+                  <label for="sub">Gerast áskrifandi </label>
+                </p><p>
+                  <input type="checkbox" id="check1" name="select-x" onclick="changeState(this)">
+                  <label for="check1">Sendið mér nánari upplýsingar um </label>
+                  <select name="val" id="select1" disabled>
+                    <option value="" selected>ferðamöguleika</option>
+                    <option value="1">Valmöguleiki 1</option>
+                    <option value="2">Valmöguleiki 2</option>
+                    <option value="3">Valmöguleiki 3</option>
+                    <option value="4">Valmöguleiki 4</option>
+                    <option value="5">Valmöguleiki 5</option>
+                  </select>
+                </p>
+                <p class="center"><input type="submit" name="submit" value="Send"></p>
+            </fieldset>
+        </form>
+      </div>
+  </main>
+  <div class="footerbg">
+  <footer class="container col-3">
+    <nav>
+      <ul class="socialbutts">
+        <li><a href="#"> Eveniet ducimus pariatur</a></li>
+        <li><a href="#"> Vitae animi, sed provident</a></li>
+        <li><a href="#"> Lorem ipsum dolor sit amet</a></li>
+        <li><a href="#"> Provident sit aliquid</a></li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="socialbutts">
+        <li><a href="#"> Groovy on Facebook</a></li>
+        <li><a href="#"> Groovy on Twitter</a></li>
+        <li><a href="#"> Groovy on Github</a></li>
+        <li><a href="#"> Groovy on Soundcloud</a></li>
+      </ul>
+    </nav>
+    <div>
+      <dl>              <!--Description list -->
+        <dt>Nafn</dt>
+          <dd>Guðmundur Jón Guðjónsson</dd>
+        <dt>Tölvupóstur</dt>
+          <dd>gjg@tskoli.is</dd>
+        <dt>Vefhönnun</dt>
+          <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+      </dl>
+    </div>
+  </footer>
+    <p class="center">&copy 2023 GJG</p>
+  </div>
+</body>
+</html>

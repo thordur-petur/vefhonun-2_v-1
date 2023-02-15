@@ -1,0 +1,318 @@
+/* CSS Grind  */
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Smooth Scroll
+- Custom Properties
+- Base Styles 
+- Typography 
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Images
+- Media Queries
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* Custom Properties
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --body: rgb(34, 34, 34);
+  --a: rgb(19, 104, 112);
+  --visited: rgb(33, 140, 150);
+  --hover: rgb(33, 140, 150); 
+  --footerbg: linear-gradient(rgb(183, 232, 236),rgb(125, 221, 230));
+  --tablebg: rgb(183, 232, 236);
+  --buttxt: rgb(51, 51, 51);
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  color: var(--body);
+}
+  
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3 {
+  font-weight: 300; 
+  margin: .5em 0;
+
+}
+h4, h5, h6 {
+  font-weight: 700; 
+}
+h1 { font-size: 2.0em; line-height: 1.6;  }
+h2 { font-size: 1.6em; line-height: 1.6; }
+h3 { font-size: 1.3em; line-height: 1.6;  }
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.justify {
+  text-align: justify;
+}
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */ 
+a {
+  color: var(--a); 
+}
+a:visited {
+  color: var(--visited); 
+}
+a:hover,
+a:active {
+  color: var(--hover);
+  text-decoration: none;
+}
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 2.3em;
+  padding: 2px 30px;
+  color: var(--buttxt);
+  text-align: center;
+  font-size: .8em;
+  font-weight: 600;
+  line-height: 2em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(187, 187, 187);
+  cursor: pointer;
+  box-sizing: border-box; }
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: var(--buttxt);
+  border-color: rgb(136, 136, 136);
+  outline: 0; }
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: rgb(255, 255, 255);
+  background-color: rgb(6, 102, 78);
+  border-color: rgb(4, 68, 52); }
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: rgb(6, 102, 78);
+  border-color: rgb(4, 68, 52); }
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select,
+number,
+date {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border-color: rgb(4, 68, 52);
+  outline: 0; }
+
+label {
+  display: inline;
+  margin-bottom: .5em;
+}
+legend {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5em;
+  font-weight: normal; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1em 0 1em 3em;
+}
+li {
+  margin-bottom: 1em; }
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2em .5em;
+  margin: 0 .2em;
+  font-size: 90%;
+  white-space: nowrap;
+  background: rgb(241, 241, 241);
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1em 1em;
+  white-space: pre; }
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgb(196, 195, 195); }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  font-style: oblique;
+}
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than mobile 
+@media screen and (min-width: 30em) {}
+*/
+/* Larger than phablet
+@media screen and (min-width: 37.5em) {}
+*/
+/* Larger than tablet */
+@media screen and (min-width: 48em) {
+  h1 { 
+    font-size: 3.0em; 
+    line-height: 1.6;
+    margin: 0.5em 0;  
+  }
+  h2 { 
+    font-size: 2em; 
+    line-height: 1.6; 
+    margin-bottom: 0.5em;  
+  }
+  h3 { 
+    font-size: 1.6em; 
+    line-height: 1.6;  
+  }
+}
+
+/* Larger than desktop 
+@media screen and (min-width: 60em) {}
+*/
+/* Larger than Desktop HD 
+@media screen and (min-width: 80em) {}
+*/
