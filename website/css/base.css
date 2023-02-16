@@ -38,7 +38,7 @@
     position: fixed;
     top: 2em;
     right: -15em;
-    z-index: 980;
+    z-index: 4;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -95,6 +95,68 @@ footer{
 .space{
     padding: 100px 0 ;
 }
+/* -- þegar til í base.css 
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+*/
+
+.overlay {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 90%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  transition: all 200ms;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: var(--a);
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.popup_img{
+  width: 80%;
+  margin-left: 10%;
+}
+
 @media screen and (min-width: 48em) {
   .sel-web{
     right: 0px;
@@ -102,5 +164,8 @@ footer{
   }
   .dropedownicon{
     right: -15em;
+  }
+  .popup{
+    width: 80%;
   }
 }

@@ -31,7 +31,7 @@
 @media screen and (min-width: 48em) {
     .col-5{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .col-2-text{
         display: grid;

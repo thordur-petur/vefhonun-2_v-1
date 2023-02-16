@@ -22,7 +22,7 @@
           <img> 
           <a href="index.html">Fljúga Flug</a>
       </div>
-      <div class="dropedownicon" id="Xmark" onclick="myFunction(this)">
+      <div class="dropedownicon" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -31,17 +31,24 @@
         <a href="Table.html">Flug</a>
         <a href="#">Links</a>
         <a href="#">Lings</a>
+        <a href="#popup1">Popup</a>
+
       </div>
-      
+      <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="popup_content">
+              <img src="images/safe-travel.gif" class="popup_img">
+            </div>
+        </div>
+      </div>
       <script>
             
 var toggleMe = document.getElementsByClassName("sel-web")[0];
 toggleMe.toggleStatus = "on";
 
 function myFunction(x) {
-  if (window.innerWidth < 750) {
         x.classList.toggle("change");
-  
   switch(toggleMe.toggleStatus){
     case "on":
       toggleMe.toggleStatus="off";
@@ -52,7 +59,16 @@ function myFunction(x) {
       toggleMe.style.right = "-15em";
       break;
   }
+  window.addEventListener('resize', () => {
+  // Toggle on mobile
+  if (window.innerWidth > 768) {
+      toggleMe.style.right = "0px";
   }
+  else if (window.innerWidth && toggleMe.toggleStatus=="on") {
+      toggleMe.style.right = "-15em";
+
+  }
+});
 }
       </script>
 
@@ -117,6 +133,11 @@ function myFunction(x) {
             Skoðaðu það úrval áfangastaða sem við bjóðum upp á næsta misserið. Farðu á best ævintíri með okkur og við munum fara með þér á mest áhugaverustu staði í heiminum
           </p>
         </div>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <a href="#">Links</a>
+        <a href="#">Lings</a>
+        </div>
       </section>
       <section class="col-2-text">
         <div class="text">
@@ -127,6 +148,11 @@ function myFunction(x) {
         </div>
         <div>
           <img class="img-text" src="/website/images/brazilsafe.jpeg">
+        </div>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <a href="#">Links</a>
+        <a href="#">Lings</a>
         </div>
       </section>
       <section class="col-2-text">
@@ -139,7 +165,28 @@ function myFunction(x) {
             Skoðaðu það úrval áfangastaða sem við bjóðum upp á næsta misserið. Farðu á best ævintíri með okkur og við munum fara með þér á mest áhugaverustu staði í heiminum
           </p>
         </div>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <a href="#">Links</a>
+        <a href="#">Lings</a>
+        </div>
       </section>
+      <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
       <div class="space"></div>
   </div>
 </body>
