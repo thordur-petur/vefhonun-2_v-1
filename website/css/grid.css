@@ -1,3 +1,9 @@
+.accord-col{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .col-border{
     text-align: center;
 }
@@ -10,6 +16,8 @@
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 10em;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .col-3-footer{
     display: grid;
@@ -55,8 +63,14 @@
     .col-2-text{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 10em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
+    .accord-col{
+        margin-left: 12em;
+        margin-right: 12em;
+    }
+
     .col-4-table{
         margin-left: 5em;
         margin-right: 5em;

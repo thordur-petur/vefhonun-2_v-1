@@ -22,7 +22,7 @@
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 500px;
     border: none;
     text-align: left;
     outline: none;
@@ -35,9 +35,11 @@
   }
   
   .panel {
-    padding: 0 18px;
-    background-color: white;
+    align-self: center;
+    
+    background-color: rgb(71, 230, 245);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    width: 500px;
   }
