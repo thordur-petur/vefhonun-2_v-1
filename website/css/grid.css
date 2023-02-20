@@ -51,7 +51,7 @@
     }
     .col-3-footer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .col-4-table{
         display: grid;

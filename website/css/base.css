@@ -1,8 +1,14 @@
 
-.logo {
-    display: flex;
-    flex-flow: row;
-    align-content: center;
+.logo{
+  top: 0;
+  left: 0;
+}
+.logo-img {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
 }
 .headmenu {
     width: 100%;
@@ -156,7 +162,13 @@ footer{
   width: 80%;
   margin-left: 10%;
 }
-
+.img-fotter{
+  position: absolute;
+  right: 5px;
+  width: 150px;
+  height: 150px;
+  
+}
 @media screen and (min-width: 48em) {
   .sel-web{
     right: 0px;
