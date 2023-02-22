@@ -14,13 +14,11 @@
     margin: 25px;
 }
 .img-text{
-  float: right;
     width: 500px; 
     height: 333px;
 }
 .accordion {
     background-color: rgb(71, 244, 255);
-    float:right;
     color: #444;
     cursor: pointer;
     height: 50px;
@@ -31,17 +29,22 @@
     font-size: 15px;
     transition: 0.4s;
   }
-  
   .active, .accordion:hover {
     background-color: rgb(71, 230, 245); 
   }
   
   .panel {
-    float: right;
-    
     background-color: rgb(71, 230, 245);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     width: 500px;
   }
+  @media screen and (min-width: 48em) {
+  .left{
+    float: left;
+  }
+  .right{
+    float: right;
+  }
+}

@@ -1,6 +1,5 @@
 #slider {
-    width: 80%;
-    margin: auto;
+    width: 95%;
     padding: 10px;
     margin-bottom: 100px;
     text-align: center;
@@ -49,7 +48,7 @@
     color: #fff;
  }
  #slides .slide_1 {
-    background: #00171F;
+    background: #5d9fb5;
  }
  #slides .slide_2 {
     background: #003459;
@@ -58,7 +57,7 @@
     background: #007EA7;
  }
  #slides .slide_4 {
-    background: #00A8E8;
+    background: #fff;
  }
  #controls {
     margin: -180px 0 0 0;

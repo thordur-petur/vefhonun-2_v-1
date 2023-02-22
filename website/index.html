@@ -17,8 +17,10 @@
 <header>
 <div class="headwrapper">
   <div class="headmenu"> 
-      <div class="logo">       
+      <div class="logo">
+        <a href="index.html">       
           <img src="images/Ur Anus.svg" class="logo-img"> 
+        </a>
       </div>
       <div class="dropedownicon" onclick="myFunction(this)">
         <div class="bar1"></div>
@@ -85,7 +87,7 @@ function myFunction(x) {
 </header>
   <body>
     <div id="slider">
-      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide1">
       <input type="radio" name="slider" id="slide2">
       <input type="radio" name="slider" id="slide3">
       <input type="radio" name="slider" id="slide4">
@@ -94,7 +96,7 @@ function myFunction(x) {
             <div class="inner">
                <div class="slide slide_1">
                   <div class="slide-content">
-                     <img src="images/sun air plane.jpg" class="img-slide">
+                     <img src="images/good plane.jpg" class="img-slide">
                   </div>
                </div>
                <div class="slide slide_2">
@@ -109,7 +111,7 @@ function myFunction(x) {
                </div>
                <div class="slide slide_4">
                   <div class="slide-content">
-                     <img src="images/AIRPLANE!.jfif" class="img-slide">
+                     <img src="images/images.jfif" class="img-slide">
                   </div>
                </div>
             </div>
@@ -129,25 +131,47 @@ function myFunction(x) {
          <label for="slide4"></label>
       </div>
     </div>
+    <script>
+      carousel();
+      
+      function carousel() {
+        if(document.querySelectorAll('input[type="radio"][id="slide1"]:checked')){
+          document.getElementById("slide2").checked = true;
+          
+        }
+        if(document.querySelectorAll('input[type="radio"][id="slide2"]:checked')){
+          document.getElementById("slide3").checked = true;
+          
+}
+        if(document.querySelectorAll('input[type="radio"][id="slide3"]:checked')){
+          document.getElementById("slide4").checked = true;
+          
+}
+        if(document.querySelectorAll('input[type="radio"][id="slide4"]:checked')){
+          document.getElementById("slide1").checked = true;
+          
+}
+        setTimeout(carousel, 5000);
+      }
+      </script>
       <section class="col-2-text">
         <div>
-          <img class="img-text" src="/website/images/air plane.jpg">
-        </div>
-        <div></div>
-          <div>
-            <button class="accordion">Section 1</button>
-              <div class="panel">
-                <a href="#">Links</a>
-                <br>
-              <a href="#">Lings</a>
-              </div>
-            </div>
+          <img class="img-text right" src="/website/images/air plane.jpg">
         </div>
         <div class="text">
           <h2>Ævintíri þitt getur byrjað núna</h2>
           <p>
             Skoðaðu það úrval áfangastaða sem við bjóðum upp á næsta misserið. Farðu á best ævintíri með okkur og við munum fara með þér á mest áhugaverustu staði í heiminum
           </p>
+        </div>
+        <div>
+          <button class="accordion right">Section 1</button>
+            <div class="panel right">
+              <a href="#">Links</a>
+              <br>
+            <a href="#">Lings</a>
+            </div>
+          </div>
       </section>
       
       <section class="col-2-text">
@@ -158,12 +182,12 @@ function myFunction(x) {
           </p>
         </div>
         <div>
-          <img class="img-text" src="/website/images/brazilsafe.jpeg">
+          <img class="img-text left" src="/website/images/brazilsafe.jpeg">
         </div>
 <div></div>
           <div>
-            <button class="accordion">Section 1</button>
-              <div class="panel">
+            <button class="accordion left">Section 1</button>
+              <div class="panel left">
                 <a href="#">Links</a>
                 <br>
               <a href="#">Lings</a>
@@ -174,24 +198,22 @@ function myFunction(x) {
       
       <section class="col-2-text">
         <div>
-          <img class="img-text" src="/website/images/ireland.jpg">
-        </div>
-        <div></div>
-          <div>
-            <button class="accordion">Section 1</button>
-              <div class="panel">
-                <a href="#">Links</a>
-                <br>
-              <a href="#">Lings</a>
-              </div>
-            </div>
+          <img class="img-text right" src="/website/images/ireland.jpg">
         </div>
         <div class="text">
           <h2>Ævintíri þitt getur byrjað núna</h2>
           <p>
             Skoðaðu það úrval áfangastaða sem við bjóðum upp á næsta misserið. Farðu á best ævintíri með okkur og við munum fara með þér á mest áhugaverustu staði í heiminum
           </p>
-
+        </div>
+        <div>
+          <button class="accordion right">Section 1</button>
+            <div class="panel right">
+              <a href="#">Links</a>
+              <br>
+            <a href="#">Lings</a>
+            </div>
+          </div>
       </section>
       <script>
 var acc = document.getElementsByClassName("accordion");
@@ -235,10 +257,16 @@ for (i = 0; i < acc.length; i++) {
       </li>
   </nav>
 <div>
-  <img src="images/facebook2.svg">
-  <img src="images/instagram.svg">
-  <img src="images/twitter.svg">
-  <img src="images/Ur Anus.svg" class="img-fotter">
+  <a href="https://www.facebook.com/trollface.ragefaces/" target="_blank"><img src="images/facebook2.svg"></a>
+  <br>
+  <br>
+  <a href="https://www.instagram.com/iceland/" target="_blank"><img src="images/instagram.svg"></a>
+  <br>
+  <br>
+  <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.svg"></a>
+</div>
+<div>
+  <a href="index.html"><img src="images/Ur Anus.svg" class="img-fotter"></a>
 </div>
 </footer>
 </html>

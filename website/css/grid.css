@@ -16,8 +16,8 @@
 .col-2-text{
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 10em;
-    margin-right: 1em;
+    margin-top: 5em;
+    margin-right: 5em;
 }
 .col-3-footer{
     display: grid;
@@ -60,7 +60,7 @@
     }
     .col-3-footer{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .col-4-table{
         display: grid;
