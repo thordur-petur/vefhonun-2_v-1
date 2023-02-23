@@ -87,7 +87,7 @@ function myFunction(x) {
 </header>
   <body>
     <div id="slider">
-      <input type="radio" name="slider" id="slide1">
+      <input type="radio" name="slider" id="slide1" checked>
       <input type="radio" name="slider" id="slide2">
       <input type="radio" name="slider" id="slide3">
       <input type="radio" name="slider" id="slide4">
@@ -131,29 +131,6 @@ function myFunction(x) {
          <label for="slide4"></label>
       </div>
     </div>
-    <script>
-      carousel();
-      
-      function carousel() {
-        if(document.querySelectorAll('input[type="radio"][id="slide1"]:checked')){
-          document.getElementById("slide2").checked = true;
-          
-        }
-        if(document.querySelectorAll('input[type="radio"][id="slide2"]:checked')){
-          document.getElementById("slide3").checked = true;
-          
-}
-        if(document.querySelectorAll('input[type="radio"][id="slide3"]:checked')){
-          document.getElementById("slide4").checked = true;
-          
-}
-        if(document.querySelectorAll('input[type="radio"][id="slide4"]:checked')){
-          document.getElementById("slide1").checked = true;
-          
-}
-        setTimeout(carousel, 5000);
-      }
-      </script>
       <section class="col-2-text">
         <div>
           <img class="img-text right" src="/website/images/air plane.jpg">
