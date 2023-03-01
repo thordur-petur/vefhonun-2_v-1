@@ -23,7 +23,6 @@
     background-color: rgb(71, 244, 255);
     border: 0;
     box-shadow: 0 0 1em rgb(47, 33, 131);
-    z-index: 3;
 }
 .dropedownicon{
     position: fixed;
@@ -44,7 +43,6 @@
     position: fixed;
     top: 2em;
     right: -15em;
-    z-index: 4;
     padding: 0;
     margin: 0;
     list-style: none;

@@ -7,19 +7,19 @@
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="css/variables.css" rel="stylesheet">
-  <link href="css/base.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/1_first-page.css" rel="stylesheet">
-  <link href="css/slideshow.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
-<body class="welcome">
-    <span id="splash-overlay" class="splash"></span>
-    <span id="welcome" class="z-depth-4"></span>
-<script>
-//Reset scroll top
-
+<body>
+<div class="welcome" id="order66">
+    <span id="splash" class="splash"></span>
+    <span id="welcome"></span>
+</div>
+      <script>
+setTimeout(() => {
+    const elem = document.getElementById("order66");
+    elem.parentNode.removeChild(elem);
+}, 5000);
 history.scrollRestoration = "manual";
 
 $(window).on('beforeunload', function(){
@@ -97,7 +97,7 @@ function myFunction(x) {
   </div> 
 
 </header>
-<body>
+<main>
     <div id="slider">
       <input type="radio" name="slider" id="slide1" checked>
       <input type="radio" name="slider" id="slide2">
@@ -222,7 +222,7 @@ for (i = 0; i < acc.length; i++) {
 </script>
       <div class="space"></div>
 
-
+</main>
 <footer class="col-3-footer">
   <nav>
     <dl><!--Description list, nafn tölvupóstur og áfangi-->

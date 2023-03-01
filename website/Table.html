@@ -7,39 +7,52 @@
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="css/variables.css" rel="stylesheet">
-  <link href="css/base.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <link href="css/table-style.css" rel="stylesheet">
 </head>
 <header>
   <div class="headwrapper">
     <div class="headmenu"> 
-        <div class="logo">       
-            <img> 
-            <a href="index.html">Fljúga Flug</a>
+        <div class="logo">
+          <a href="index.html">       
+            <img src="images/Ur Anus.svg" class="logo-img"> 
+          </a>
         </div>
-        <div class="dropedownicon" id="Xmark" onclick="myFunction(this)">
+        <div class="dropedownicon" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
         <div class="sel-web col-5" id="poop">
+          <div>
+          <img src="images/coin-dollar.svg">
           <a href="Table.html">Flug</a>
-          <a href="#">Links</a>
-          <a href="#">Lings</a>
         </div>
-        
+      <div>
+          <img src="images/accessibility.svg">
+          <a href="#">Links</a>
+        </div>
+      <div>
+          <img src="images/lifebuoy.svg">
+          <a href="#popup1">Popup</a>
+        </div>
+  
+        </div>
+        <div id="popup1" class="overlay">
+          <div class="popup">
+              <a class="close" href="#">&times;</a>
+              <div class="popup_content">
+                <img src="images/safe-travel.gif" class="popup_img">
+              </div>
+          </div>
+        </div>
         <script>
               
   var toggleMe = document.getElementsByClassName("sel-web")[0];
   toggleMe.toggleStatus = "on";
   
   function myFunction(x) {
-    if (window.innerWidth < 750) {
           x.classList.toggle("change");
-    
     switch(toggleMe.toggleStatus){
       case "on":
         toggleMe.toggleStatus="off";
@@ -50,14 +63,23 @@
         toggleMe.style.right = "-15em";
         break;
     }
+    window.addEventListener('resize', () => {
+    // Toggle on mobile
+    if (window.innerWidth > 768) {
+        toggleMe.style.right = "0px";
     }
+    else if (window.innerWidth && toggleMe.toggleStatus=="on") {
+        toggleMe.style.right = "-15em";
+  
+    }
+  });
   }
         </script>
   
             </div>
         </nav>
     </div> 
-  </div>
+  
   </header>
     </script>      <section class="col-4-table">
       <table>
@@ -250,26 +272,38 @@
     </script>
     </body>  
     <footer class="col-3-footer">
-        <nav>
-          <dl><!--Description list, nafn tölvupóstur og áfangi-->
-            <h4>Eigandi</h4>
-              <dd>Þórður Pétur Jónsson</dd>
-              <dd>thordurpetur@gmail.com</dd>
-          </dl>
-        </nav>
-        <nav>
-          <h4>Getur þetta hjálpað?</h4>
-          <ul> <!-- Absolute links "target _blank" opnar nýjan glugga í vafranum !aðeins notað þegar vísað er út úr eigin vef-->  
-            <li>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> tengill hér sem vísar á mikilvæga vefsíðu</a> 
-            </li>
-            <li>
-              <a href="index.html">aftur til heima síðu</a>
-            </li>
-            <li>
-                hjálp 
-            </li>
-        </nav>
-      </footer>
+      <nav>
+        <dl><!--Description list, nafn tölvupóstur og áfangi-->
+          <h4>Eigandi</h4>
+            <dd>Þórður Pétur Jónsson</dd>
+            <dd>thordurpetur@gmail.com</dd>
+        </dl>
+      </nav>
+      <nav>
+        <h4>Getur þetta hjálpað?</h4>
+        <ul> <!-- Absolute links "target _blank" opnar nýjan glugga í vafranum !aðeins notað þegar vísað er út úr eigin vef-->  
+          <li>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> tengill hér sem vísar á mikilvæga vefsíðu</a> 
+          </li>
+          <li>
+             <a href="index.html">aftur til heima síðu</a>
+          </li>
+          <li>
+              hjálp 
+          </li>
+      </nav>
+    <div>
+      <a href="https://www.facebook.com/trollface.ragefaces/" target="_blank"><img src="images/facebook2.svg"></a>
+      <br>
+      <br>
+      <a href="https://www.instagram.com/iceland/" target="_blank"><img src="images/instagram.svg"></a>
+      <br>
+      <br>
+      <a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.svg"></a>
+    </div>
+    <div>
+      <a href="index.html"><img src="images/Ur Anus.svg" class="img-fotter"></a>
+    </div>
+    </footer>
       </html>
       
