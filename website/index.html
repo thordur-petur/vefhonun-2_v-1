@@ -14,6 +14,18 @@
   <link href="css/1_first-page.css" rel="stylesheet">
   <link href="css/slideshow.css" rel="stylesheet">
 </head>
+<body class="welcome">
+    <span id="splash-overlay" class="splash"></span>
+    <span id="welcome" class="z-depth-4"></span>
+<script>
+//Reset scroll top
+
+history.scrollRestoration = "manual";
+
+$(window).on('beforeunload', function(){
+      $(window).scrollTop(0);
+});
+</script>
 <header>
 <div class="headwrapper">
   <div class="headmenu"> 
@@ -83,9 +95,9 @@ function myFunction(x) {
           </div>
       </nav>
   </div> 
-</div>
+
 </header>
-  <body>
+<body>
     <div id="slider">
       <input type="radio" name="slider" id="slide1" checked>
       <input type="radio" name="slider" id="slide2">
@@ -133,7 +145,7 @@ function myFunction(x) {
     </div>
       <section class="col-2-text">
         <div>
-          <img class="img-text right" src="/website/images/air plane.jpg">
+          <img class="img-text right" src="images/air plane.jpg">
         </div>
         <div class="text">
           <h2>Ævintíri þitt getur byrjað núna</h2>
@@ -159,7 +171,7 @@ function myFunction(x) {
           </p>
         </div>
         <div>
-          <img class="img-text left" src="/website/images/brazilsafe.jpeg">
+          <img class="img-text left" src="images/brazilsafe.jpeg">
         </div>
 <div></div>
           <div>
@@ -170,12 +182,12 @@ function myFunction(x) {
               <a href="#">Lings</a>
               </div>
             </div>
-        </div>
+        
       </section>
       
       <section class="col-2-text">
         <div>
-          <img class="img-text right" src="/website/images/ireland.jpg">
+          <img class="img-text right" src="images/ireland.jpg">
         </div>
         <div class="text">
           <h2>Ævintíri þitt getur byrjað núna</h2>
@@ -209,8 +221,7 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
       <div class="space"></div>
-  </div>
-</body>
+
 
 <footer class="col-3-footer">
   <nav>
@@ -246,4 +257,5 @@ for (i = 0; i < acc.length; i++) {
   <a href="index.html"><img src="images/Ur Anus.svg" class="img-fotter"></a>
 </div>
 </footer>
+</body>
 </html>
